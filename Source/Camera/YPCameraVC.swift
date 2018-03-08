@@ -118,7 +118,7 @@ public class YPCameraVC: UIViewController, UIGestureRecognizerDelegate, Permissi
                 return
             }
             
-        self.photoCapture.stopCamera()
+            self.photoCapture.stopCamera()
             
             var image = shotImage
             // Crop the image if the output needs to be square.
@@ -187,4 +187,3 @@ public class YPCameraVC: UIViewController, UIGestureRecognizerDelegate, Permissi
         v.flashButton.isHidden = !photoCapture.hasFlash
     }
 }
-
